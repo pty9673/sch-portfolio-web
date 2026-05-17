@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
-import BlogSection from "@/components/BlogSection";
+import EducationSection from "@/components/EducationSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -31,7 +31,7 @@ export default function Home() {
         className="border-b"
         style={{ borderColor: "rgba(74, 123, 167, 0.1)" }}
       />
-      <BlogSection />
+      <EducationSection />
       <div
         className="border-b"
         style={{ borderColor: "rgba(74, 123, 167, 0.1)" }}
