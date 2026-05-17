@@ -1,0 +1,43 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [
+    "server",
+    "db",
+    "user"
+  ],
+  "dev_command": "pnpm run dev",
+  "env_vars": {
+    "DATABASE_URL": "mysql://4WEu5GHb23VyQAL.root:7ZgdD0GVg3yD66Twpo5k@gateway06.us-east-1.prod.aws.tidbcloud.com:4000/MHr2zo67tJ7qRobxgEQTnH?ssl={\"rejectUnauthorized\":true}"
+  },
+  "experiments": [
+    "no_db_push"
+  ],
+  "git_remote": {
+    "repo_url": "s3://vida-prod-gitrepo/webdev-git/310519663668220682/MHr2zo67tJ7qRobxgEQTnH",
+    "access_key_id": "ASIAZV3A2ECZLWPBYXIQ",
+    "secret_access_key": "X4+rGoAhSdv+IhpfokuiZzjG3ox3u9KiavojnOI7",
+    "session_token": "IQoJb3JpZ2luX2VjENr//////////wEaCXVzLWVhc3QtMSJIMEYCIQDXjyrzI0Si5AN5vhNoga33egto296SxpWg+bh/6Pmv/AIhAJpLX+NWCK1jUBFo4jR86CmAmO4ic7KECYiPbN4Wk0v4Kv4DCKP//////////wEQBBoMNjY1Mzg2MDk4ODY2Igzar2TftQs4A+Y3zWEq0gNOfbV4Jtuhl0J2LEDixwDJ5FKs3re7pRfrbYjur2L0VTKYDSAouTrR4/aPcF1xh6IVIUbgzL1z5IhOM+tneSAwAL8zGC9AAic/p9+ylh/HYS9n54bqZasqw8hIyocqgDp2pO2/PyQSuk4i3aZEvNdeMVMB/avVihK/cOloDFm0mmIfUo6G5tpK7OrUSSBYiyZu3aO5eJeLsfDOZYBAgerSCGFVIkS6fmcKmlUoxunxU0JWmkEKG8bdhn1WA4r05zfyGUjE3LBsfeRD/K0jgkNTdhoQl4wRNwcYwp7pf1xKk0i+PTIi0rjeF9RE9w/tpmkdHvbqIOoJPB04QJrPeyphOJML8RUAnElpX4sWiGDsI2j/bOLaEl0qaBlSSxeToo+/dJiqzGsNGiaMg7KjABHG2f0pzLpWAJVMW4uNLf+WAGOz7tsQed5Nu+b58kfyoG2h2pYHvSv2fA/6sbKlO2wnR8o7ZUhss8aRTpyd1dFaNSQ8dI1D0/9CP1FUIy+KqRE/Qn2EHIzmKSQO0nErcH6SfM9gTMkQ7u2C0GYlmmjGxGES5N07goASzwa5YSN/jOVOMja33L4NN8zQDYXLZOuuVFnfJZ7eApcU8dFmyTpISxwkMI2cptAGOpwBLsOVi39SNuCoP1iX4XGoJIhp3F82LSkg3OGfkXzscusbkCkmG/32KUGmMijZa1KMvXCucNwJhC++QJHgMjLvyoYWMc0Ygi/60RxVw+sFVMpYKdNk+CgZZaYZR/1IjAl8T1GxLy0LBHtaDo5QUt/ziio0vYHosLgqH0zDL7qbl3KDsC5aaqfvrFsSOJjqQzHxb0z1pzgII9uSDmRe",
+    "expiration": "2026-05-17T21:44:45.000Z"
+  },
+  "name": "marcus-chen-portfolio-web",
+  "path": "/home/ubuntu/marcus-chen-portfolio-web",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "mvsXE7p6ULsWbTDXFEvvmB",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "DikVu9tZPXKmFBPA6Hp3vD",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "신창환",
+    "OWNER_OPEN_ID": "ChbSZB525dHsEenGWnXiYL",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "233cc0b3-b404-419f-a5a1-5fc8d26b5bd0",
+    "VITE_APP_ID": "MHr2zo67tJ7qRobxgEQTnH",
+    "VITE_APP_LOGO": "",
+    "VITE_APP_TITLE": "Marcus Chen Portfolio",
+    "VITE_FRONTEND_FORGE_API_KEY": "aphCMpYaLVn4RdVSQBMbqH",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-db-user",
+  "test_command": "pnpm test"
+}
