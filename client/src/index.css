@@ -175,3 +175,50 @@
     }
   }
 }
+
+/* Portfolio-specific styles */
+.mono {
+  font-family: 'JetBrains Mono', 'Space Mono', monospace;
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(74, 123, 167, 0.2),
+    transparent
+  );
+}
+
+/* Typing cursor animation */
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Scanline effect */
+.scanline {
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.03),
+    rgba(0, 0, 0, 0.03) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+}
+
+/* Dot grid pattern */
+.dot-grid {
+  background-image: radial-gradient(
+    circle,
+    rgba(74, 123, 167, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+}
