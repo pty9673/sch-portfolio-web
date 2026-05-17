@@ -10,15 +10,15 @@ const TYPING_TEXTS = [
 ];
 
 const techStack = [
-  { name: "React", icon: "⚛️", color: "#61DAFB" },
-  { name: "Java", icon: "☕", color: "#007396" },
-  { name: "MySQL", icon: "🗄️", color: "#4479A1" },
-  { name: "JavaScript", icon: "🟨", color: "#F7DF1E" },
-  { name: "CSS3", icon: "🎨", color: "#1572B6" },
-  { name: "HTML5", icon: "🌐", color: "#E34F26" },
-  { name: "Flutter", icon: "💙", color: "#02569B" },
-  { name: "Git", icon: "🔀", color: "#F05032" },
-  { name: "GitHub", icon: "🐙", color: "#181717" },
+  { name: "React", logo: "/manus-storage/6t9ERzgejwQg_6ff8b02f.png" },
+  { name: "Java", logo: "/manus-storage/NPlERtCY5afu_311f89d2.png" },
+  { name: "MySQL", logo: "/manus-storage/uu1Wqm9bbidv_02c42af6.png" },
+  { name: "JavaScript", logo: "/manus-storage/jIIsSTmoYIfN_c2cfd46a.png" },
+  { name: "CSS3", logo: "/manus-storage/oMKMvL7RbczG_626d5eb5.png" },
+  { name: "HTML5", logo: "/manus-storage/OrvdBZIop6AD_a9c52830.png" },
+  { name: "Flutter", logo: "/manus-storage/ASQPMYa173Js_432db0db.png" },
+  { name: "Git", logo: "/manus-storage/r7Ehko5k7cxL_f9fa101b.png" },
+  { name: "GitHub", logo: "/manus-storage/FXA3YbaVfrB1_cd6df63a.jpg" },
 ];
 
 function useTypingEffect(texts: string[], speed = 80, pause = 2000) {
@@ -201,34 +201,43 @@ export default function HeroSection() {
             >
               // tech stack
             </p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-4">
               {techStack.map((tech, i) => (
                 <motion.div
                   key={tech.name}
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.8 + i * 0.05 }}
-                  className="flex items-center gap-1.5 px-3 py-2 rounded transition-all duration-200"
-                  style={{
-                    background: "rgba(74, 123, 167, 0.08)",
-                    border: "1px solid rgba(74, 123, 167, 0.2)",
-                    cursor: "default",
-                  }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.borderColor = "#4a7ba7";
-                    (e.currentTarget as HTMLElement).style.background =
-                      "rgba(74, 123, 167, 0.15)";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.borderColor =
-                      "rgba(74, 123, 167, 0.2)";
-                    (e.currentTarget as HTMLElement).style.background =
-                      "rgba(74, 123, 167, 0.08)";
-                  }}
+                  className="flex flex-col items-center gap-2 cursor-pointer"
+                  whileHover={{ scale: 1.1 }}
                 >
-                  <span>{tech.icon}</span>
+                  <div
+                    className="w-14 h-14 flex items-center justify-center rounded-lg transition-all duration-200"
+                    style={{
+                      background: "rgba(255, 255, 255, 0.6)",
+                      border: "1px solid rgba(74, 123, 167, 0.15)",
+                    }}
+                    onMouseEnter={(e) => {
+                      (e.currentTarget as HTMLElement).style.background =
+                        "rgba(255, 255, 255, 0.8)";
+                      (e.currentTarget as HTMLElement).style.borderColor =
+                        "rgba(74, 123, 167, 0.3)";
+                    }}
+                    onMouseLeave={(e) => {
+                      (e.currentTarget as HTMLElement).style.background =
+                        "rgba(255, 255, 255, 0.6)";
+                      (e.currentTarget as HTMLElement).style.borderColor =
+                        "rgba(74, 123, 167, 0.15)";
+                    }}
+                  >
+                    <img
+                      src={tech.logo}
+                      alt={tech.name}
+                      className="w-10 h-10 object-contain"
+                    />
+                  </div>
                   <span
-                    className="text-sm"
+                    className="text-xs font-medium text-center"
                     style={{
                       color: "#4a5568",
                       fontFamily: "'Pretendard', sans-serif",
