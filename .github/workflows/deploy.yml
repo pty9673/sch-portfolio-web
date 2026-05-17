@@ -37,10 +37,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
-      - name: Build Frontend Only
+      - name: Build Frontend
         run: pnpm vite build --config client/vite.config.ts
         env:
-          VITE_DISABLE_SERVER: "true"
+          NODE_ENV: production
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -48,9 +48,10 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist/public'
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 
