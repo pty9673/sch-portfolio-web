@@ -1,4 +1,4 @@
-import { Github } from "lucide-react";
+import { Github, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -8,16 +8,19 @@ const projects = [
     id: 1,
     fullName: "부산 지역 맛집 예약 사이트",
     repo: "https://github.com/pty9673/next502_prj_team",
+    portfolio: "https://canva.link/suu6za8avmacp76",
   },
   {
     id: 2,
     fullName: "영화 커뮤니티 앱",
     repo: "https://github.com/pty9673/next502_android_team_project",
+    portfolio: "https://canva.link/lkx74pi663ih2q7",
   },
   {
     id: 3,
     fullName: "창고이음 리뉴얼",
     repo: "https://github.com/pty9673/next502_react_team_project",
+    portfolio: "https://canva.link/9kk85cy75zacivl",
   },
 ];
 
@@ -89,32 +92,60 @@ export default function ProjectsSection() {
                 >
                   {project.fullName}
                 </h3>
-                <a
-                  href={project.repo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-3 py-2 rounded transition-all duration-200"
-                  style={{
-                    background: "rgba(74, 123, 167, 0.1)",
-                    color: "#4a7ba7",
-                  }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.background =
-                      "rgba(74, 123, 167, 0.2)";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.background =
-                      "rgba(74, 123, 167, 0.1)";
-                  }}
-                >
-                  <Github size={16} />
-                  <span
-                    className="text-sm"
-                    style={{ fontFamily: "'Pretendard', sans-serif" }}
+                <div className="flex items-center gap-2">
+                  <a
+                    href={project.portfolio}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-3 py-2 rounded transition-all duration-200"
+                    style={{
+                      background: "rgba(74, 123, 167, 0.1)",
+                      color: "#4a7ba7",
+                    }}
+                    onMouseEnter={(e) => {
+                      (e.currentTarget as HTMLElement).style.background =
+                        "rgba(74, 123, 167, 0.2)";
+                    }}
+                    onMouseLeave={(e) => {
+                      (e.currentTarget as HTMLElement).style.background =
+                        "rgba(74, 123, 167, 0.1)";
+                    }}
                   >
-                    Repository
-                  </span>
-                </a>
+                    <FileText size={16} />
+                    <span
+                      className="text-sm"
+                      style={{ fontFamily: "'Pretendard', sans-serif" }}
+                    >
+                      Portfolio
+                    </span>
+                  </a>
+                  <a
+                    href={project.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-3 py-2 rounded transition-all duration-200"
+                    style={{
+                      background: "rgba(74, 123, 167, 0.1)",
+                      color: "#4a7ba7",
+                    }}
+                    onMouseEnter={(e) => {
+                      (e.currentTarget as HTMLElement).style.background =
+                        "rgba(74, 123, 167, 0.2)";
+                    }}
+                    onMouseLeave={(e) => {
+                      (e.currentTarget as HTMLElement).style.background =
+                        "rgba(74, 123, 167, 0.1)";
+                    }}
+                  >
+                    <Github size={16} />
+                    <span
+                      className="text-sm"
+                      style={{ fontFamily: "'Pretendard', sans-serif" }}
+                    >
+                      Repository
+                    </span>
+                  </a>
+                </div>
               </div>
             </motion.div>
           ))}
