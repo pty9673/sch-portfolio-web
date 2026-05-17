@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ] # main 브랜치에 코드가 올라올 때마다 작동
+    branches: [ main ]
 
 permissions:
   contents: read
@@ -37,8 +37,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
-      - name: Build
-        run: pnpm build
+      - name: Build Frontend Only
+        run: pnpm vite build --config client/vite.config.ts
+        env:
+          VITE_DISABLE_SERVER: "true"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -46,8 +48,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # 빌드된 결과물이 저장되는 폴더
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
