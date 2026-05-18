@@ -67,9 +67,8 @@ export default function Navbar() {
           }}
         >
           <span style={{ fontFamily: "'Pretendard', sans-serif" }}>
-            신창환
+            sch Portfolio
           </span>
-          <span style={{ color: "#4a7ba7" }}>.</span>
         </a>
 
         {/* Desktop Navigation */}
