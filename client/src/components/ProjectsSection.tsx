@@ -9,12 +9,14 @@ const projects = [
     fullName: "부산 지역 맛집 예약 사이트",
     repo: "https://github.com/pty9673/next502_prj_team",
     portfolio: "https://canva.link/suu6za8avmacp76",
+    video: "https://youtu.be/Tv3nelXY2oI",
   },
   {
     id: 2,
     fullName: "영화 커뮤니티 앱",
     repo: "https://github.com/pty9673/next502_android_team_project",
     portfolio: "https://canva.link/lkx74pi663ih2q7",
+    video: "https://youtube.com/shorts/T50AZ_H2Ris?feature=share",
   },
   {
     id: 3,
