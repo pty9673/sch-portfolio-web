@@ -1,4 +1,4 @@
-import { Github, FileText } from "lucide-react";
+import { Github, FileText, Play } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -21,6 +21,7 @@ const projects = [
     fullName: "창고이음 리뉴얼",
     repo: "https://github.com/pty9673/next502_react_team_project",
     portfolio: "https://canva.link/9kk85cy75zacivl",
+    video: "https://youtu.be/aOozQSnwe_U",
   },
 ];
 
@@ -119,6 +120,34 @@ export default function ProjectsSection() {
                       Portfolio
                     </span>
                   </a>
+                  {project.video && (
+                    <a
+                      href={project.video}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-3 py-2 rounded transition-all duration-200"
+                      style={{
+                        background: "rgba(74, 123, 167, 0.1)",
+                        color: "#4a7ba7",
+                      }}
+                      onMouseEnter={(e) => {
+                        (e.currentTarget as HTMLElement).style.background =
+                          "rgba(74, 123, 167, 0.2)";
+                      }}
+                      onMouseLeave={(e) => {
+                        (e.currentTarget as HTMLElement).style.background =
+                          "rgba(74, 123, 167, 0.1)";
+                      }}
+                    >
+                      <Play size={16} />
+                      <span
+                        className="text-sm"
+                        style={{ fontFamily: "'Pretendard', sans-serif" }}
+                      >
+                        Video
+                      </span>
+                    </a>
+                  )}
                   <a
                     href={project.repo}
                     target="_blank"
