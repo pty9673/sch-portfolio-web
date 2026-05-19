@@ -9,6 +9,8 @@ const projects = [
     id: 1,
     fullName: "부산 지역 맛집 예약 사이트",
     description: "부산 지역의 맛집 정보를 한눈에 파악할 수 있도록 제공하고, 사용자 간 정보 공유 및 예약이 가능한 지역 특화 통합 웹 사이트. 사용자 인증(로그인/회원가입), 역할 관리(일반 고객/식당 관리자), 이메일 및 전화번호 인증 기능 포함.",
+    background: "부산 지역의 맛집 정보가 산재되어 있어 사용자들이 한곳에서 정보를 얻기 어려운 문제를 해결하기 위해 기획. 예약 시스템을 통해 식당과 사용자 간의 상호작용을 원활하게 하는 것을 목표로 함.",
+    role: "백엔드 개발 (Spring Boot), 사용자 인증 시스템 구현, 데이터베이스 설계 및 최적화, 예약 기능 API 개발",
     period: "2026.02.02 ~ 2026.02.13",
     teamSize: 7,
     images: ["/manus-storage/pasted_file_4lntVG_image_2258d741.png", "/manus-storage/pasted_file_vHyt3H_image_4f7d274a.png"],
@@ -29,6 +31,8 @@ const projects = [
     id: 2,
     fullName: "영화 커뮤니티 앱",
     description: "사용자들이 영화 관련 상세 정보와 실시간 리뷰를 한곳에서 편리하게 확인하고 의견을 나눌 수 있는 커뮤니티 공간. 영화 정보 조회, 별점 평가 시스템, 리뷰 작성/수정/삭제 기능, 배우 정보 표시 등의 기능 포함.",
+    background: "영화 팬들이 다양한 플랫폼에서 영화 정보와 리뷰를 찾아야 하는 불편함을 해결하기 위해 기획. 한 앱에서 영화 정보, 배우 정보, 사용자 리뷰를 통합적으로 제공하여 영화 커뮤니티를 활성화하는 것을 목표로 함.",
+    role: "모바일 앱 개발 (Flutter), 리뷰 시스템 구현, Firebase 실시간 데이터베이스 연동, 별점 평가 기능 개발",
     period: "2026.03.12 ~ 2026.03.25",
     teamSize: 4,
     images: ["/manus-storage/pasted_file_dHwwOe_image_cda71e15.png", "/manus-storage/pasted_file_cKC9aP_image_035860f6.png"],
@@ -47,6 +51,8 @@ const projects = [
     id: 3,
     fullName: "창고이음 리뉴얼",
     description: "기존에 노후화된 웹 전용 '창고이음' 서비스를 모바일 환경으로 확장하고 UI/UX를 개선하여 사용자의 접근성과 편의성을 대폭 향상",
+    background: "기존 창고이음 서비스가 웹에만 제한되어 있어 모바일 사용자들의 접근성이 낮은 문제를 해결하기 위해 기획. 모바일 앱 개발과 UI/UX 개선을 통해 사용자 경험을 향상시키는 것을 목표로 함.",
+    role: "프론트엔드 개발 (React), 모바일 앱 개발 (Flutter), UI/UX 개선 및 디자인 시스템 구축, 크로스 플랫폼 호환성 확보",
     period: "2026.04.22 ~ 2026.05.13",
     teamSize: 3,
     images: [],
@@ -110,11 +116,11 @@ function ProjectCard({ project, inView }: { project: typeof projects[0]; inView:
 
       {/* Image Carousel */}
       {hasImages && (
-        <div className="mb-4 relative rounded-lg overflow-hidden" style={{ aspectRatio: "16/9" }}>
+        <div className="mb-4 relative rounded-lg overflow-hidden bg-gray-100" style={{ maxHeight: "400px" }}>
           <img
             src={images[currentImageIndex]}
             alt={`${project.fullName} - Screenshot ${currentImageIndex + 1}`}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
 
           {/* Navigation Buttons */}
@@ -179,6 +185,38 @@ function ProjectCard({ project, inView }: { project: typeof projects[0]; inView:
       >
         {project.description}
       </p>
+
+      {/* Background Section */}
+      <div className="mb-4 p-3 rounded-lg" style={{ background: "rgba(74, 123, 167, 0.05)" }}>
+        <h4
+          className="text-xs font-semibold mb-2"
+          style={{ color: "#4a7ba7", fontFamily: "'Pretendard', sans-serif" }}
+        >
+          📌 기획배경
+        </h4>
+        <p
+          className="text-xs"
+          style={{ color: "#4a5568", fontFamily: "'Pretendard', sans-serif", lineHeight: "1.5" }}
+        >
+          {project.background}
+        </p>
+      </div>
+
+      {/* Role Section */}
+      <div className="mb-4 p-3 rounded-lg" style={{ background: "rgba(74, 123, 167, 0.05)" }}>
+        <h4
+          className="text-xs font-semibold mb-2"
+          style={{ color: "#4a7ba7", fontFamily: "'Pretendard', sans-serif" }}
+        >
+          👤 담당역할
+        </h4>
+        <p
+          className="text-xs"
+          style={{ color: "#4a5568", fontFamily: "'Pretendard', sans-serif", lineHeight: "1.5" }}
+        >
+          {project.role}
+        </p>
+      </div>
 
       {/* Project Meta Info */}
       <div className="flex flex-wrap gap-4 mb-4 text-sm">
