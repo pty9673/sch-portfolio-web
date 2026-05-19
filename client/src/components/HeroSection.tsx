@@ -19,6 +19,7 @@ const techStack = [
   { name: "Flutter", logo: "/manus-storage/ASQPMYa173Js_432db0db.png" },
   { name: "Git", logo: "/manus-storage/r7Ehko5k7cxL_f9fa101b.png" },
   { name: "GitHub", logo: "/manus-storage/FXA3YbaVfrB1_cd6df63a.jpg" },
+
 ];
 
 function useTypingEffect(texts: string[], speed = 80, pause = 2000) {
@@ -128,18 +129,30 @@ export default function HeroSection() {
             </span>
           </motion.div>
 
-          {/* Birth Date */}
+          {/* Birth Date, Location, Contact */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.45 }}
-            className="mb-6"
+            className="mb-6 space-y-2"
           >
             <p
               className="text-sm"
               style={{ color: "#4a5568", fontFamily: "'Pretendard', sans-serif" }}
             >
               📅 생년월일: 1997.12.06
+            </p>
+            <p
+              className="text-sm"
+              style={{ color: "#4a5568", fontFamily: "'Pretendard', sans-serif" }}
+            >
+              📍 Location: 부산
+            </p>
+            <p
+              className="text-sm"
+              style={{ color: "#4a5568", fontFamily: "'Pretendard', sans-serif" }}
+            >
+              📞 연락처: 010-5758-5141
             </p>
           </motion.div>
 

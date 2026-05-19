@@ -24,12 +24,14 @@ const skillCategories: SkillCategory[] = [
     name: "Backend",
     skills: [
       { name: "Java", logo: "/manus-storage/NPlERtCY5afu_311f89d2.png" },
+      { name: "Spring Boot", logo: "https://spring.io/images/spring-logo.png" },
     ],
   },
   {
     name: "Database",
     skills: [
       { name: "MySQL", logo: "/manus-storage/uu1Wqm9bbidv_02c42af6.png" },
+      { name: "Oracle", logo: "https://www.oracle.com/favicon.ico" },
     ],
   },
   {
