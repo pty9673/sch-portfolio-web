@@ -19,8 +19,13 @@ const techStack = [
   { name: "Flutter", logo: "/manus-storage/ASQPMYa173Js_432db0db.png" },
   { name: "Git", logo: "/manus-storage/r7Ehko5k7cxL_f9fa101b.png" },
   { name: "GitHub", logo: "/manus-storage/FXA3YbaVfrB1_cd6df63a.jpg" },
-  { name: "Spring Boot", logo: "https://spring.io/images/spring-logo.png" },
-  { name: "Oracle", logo: "https://www.oracle.com/favicon.ico" },
+  { name: "Spring Boot", logo: "/manus-storage/spring-boot-logo.png" },
+  { name: "Spring Framework", logo: "/manus-storage/spring-framework-logo.png" },
+  { name: "Oracle", logo: "/manus-storage/oracle-logo.png" },
+  { name: "SQLite", logo: "/manus-storage/sqlite-logo.png" },
+  { name: "MyBatis", logo: "/manus-storage/mybatis-logo.png" },
+  { name: "Gradle", logo: "/manus-storage/gradle-logo.png" },
+  { name: "Maven", logo: "/manus-storage/maven-logo.png" },
 ];
 
 function useTypingEffect(texts: string[], speed = 80, pause = 2000) {
