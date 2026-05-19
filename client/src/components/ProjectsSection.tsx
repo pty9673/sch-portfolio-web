@@ -7,10 +7,10 @@ const projects = [
   {
     id: 1,
     fullName: "부산 지역 맛집 예약 사이트",
-    description: "부산 지역의 맛집 정보를 한눈에 파악할 수 있도록 제공하고, 사용자 간 정보 공유 및 예약이 가능한 지역 특화 통합 웹 사이트",
+    description: "부산 지역의 맛집 정보를 한눈에 파악할 수 있도록 제공하고, 사용자 간 정보 공유 및 예약이 가능한 지역 특화 통합 웹 사이트. 사용자 인증(로그인/회원가입), 역할 관리(일반 고객/식당 관리자), 이메일 및 전화번호 인증 기능 포함.",
     period: "2026.02.02 ~ 2026.02.13",
     teamSize: 7,
-    image: "",
+    image: "/manus-storage/pasted_file_vHyt3H_image_4f7d274a.png",
     technologies: ["Spring Boot", "Java", "HTML5", "CSS3", "Bootstrap", "MySQL"],
     techIcons: [
       { name: "Spring Boot", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
@@ -27,10 +27,10 @@ const projects = [
   {
     id: 2,
     fullName: "영화 커뮤니티 앱",
-    description: "사용자들이 영화 관련 상세 정보와 실시간 리뷰를 한곳에서 편리하게 확인하고 의견을 나눌 수 있는 커뮤니티 공간",
+    description: "사용자들이 영화 관련 상세 정보와 실시간 리뷰를 한곳에서 편리하게 확인하고 의견을 나눌 수 있는 커뮤니티 공간. 영화 정보 조회, 별점 평가 시스템, 리뷰 작성/수정/삭제 기능, 배우 정보 표시 등의 기능 포함.",
     period: "2026.03.12 ~ 2026.03.25",
     teamSize: 4,
-    image: "",
+    image: "/manus-storage/pasted_file_dHwwOe_image_cda71e15.png",
     technologies: ["MySQL", "Flutter", "Firebase", "Spring Boot"],
     techIcons: [
       { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
@@ -135,6 +135,17 @@ export default function ProjectsSection() {
               >
                 {project.fullName}
               </h3>
+
+              {/* Project Image */}
+              {project.image && (
+                <div className="mb-4 rounded-lg overflow-hidden" style={{ maxHeight: "300px" }}>
+                  <img
+                    src={project.image}
+                    alt={project.fullName}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              )}
 
               {/* Project Description */}
               <p
