@@ -19,10 +19,16 @@ const socialLinks = [
     label: "sssc5141@naver.com",
   },
   {
+    name: "Phone",
+    icon: MapPin,
+    url: "tel:010-5758-5141",
+    label: "010-5758-5141",
+  },
+  {
     name: "Location",
     icon: MapPin,
     url: "#",
-    label: "대한민국",
+    label: "부산",
   },
 ];
 
