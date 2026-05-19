@@ -202,21 +202,6 @@ function ProjectCard({ project, inView }: { project: typeof projects[0]; inView:
         </p>
       </div>
 
-      {/* Role Section */}
-      <div className="mb-4 p-3 rounded-lg" style={{ background: "rgba(74, 123, 167, 0.05)" }}>
-        <h4
-          className="text-xs font-semibold mb-2"
-          style={{ color: "#4a7ba7", fontFamily: "'Pretendard', sans-serif" }}
-        >
-          👤 담당역할
-        </h4>
-        <p
-          className="text-xs"
-          style={{ color: "#4a5568", fontFamily: "'Pretendard', sans-serif", lineHeight: "1.5" }}
-        >
-          {project.role}
-        </p>
-      </div>
 
       {/* Project Meta Info */}
       <div className="flex flex-wrap gap-4 mb-4 text-sm">
