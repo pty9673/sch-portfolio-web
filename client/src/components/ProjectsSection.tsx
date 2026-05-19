@@ -186,19 +186,19 @@ function ProjectCard({ project, inView }: { project: typeof projects[0]; inView:
         {project.description}
       </p>
 
-      {/* Background Section */}
+      {/* Role Section */}
       <div className="mb-4 p-3 rounded-lg" style={{ background: "rgba(74, 123, 167, 0.05)" }}>
         <h4
           className="text-xs font-semibold mb-2"
           style={{ color: "#4a7ba7", fontFamily: "'Pretendard', sans-serif" }}
         >
-          📌 기획배경
+          👤 담당역할
         </h4>
         <p
           className="text-xs"
           style={{ color: "#4a5568", fontFamily: "'Pretendard', sans-serif", lineHeight: "1.5" }}
         >
-          {project.background}
+          {project.role}
         </p>
       </div>
 
