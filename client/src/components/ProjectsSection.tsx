@@ -14,10 +14,11 @@ const projects = [
     period: "2026.02.02 ~ 2026.02.13",
     teamSize: 7,
     images: ["/manus-storage/pasted_file_4lntVG_image_2258d741.png", "/manus-storage/pasted_file_vHyt3H_image_4f7d274a.png"],
-    technologies: ["Spring Boot", "Java", "HTML5", "CSS3", "Bootstrap", "MySQL"],
+    technologies: ["Spring Boot", "Java", "JPA", "HTML5", "CSS3", "Bootstrap", "MySQL"],
     techIcons: [
       { name: "Spring Boot", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
       { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+      { name: "JPA", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" },
       { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
       { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
       { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },

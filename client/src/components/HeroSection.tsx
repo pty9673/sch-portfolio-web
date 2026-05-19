@@ -26,6 +26,7 @@ const techStack = [
   { name: "MyBatis", logo: "https://mybatis.org/images/mybatis-logo.png" },
   { name: "Gradle", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-original.svg" },
   { name: "Maven", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" },
+  { name: "JPA", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" },
 ];
 
 function useTypingEffect(texts: string[], speed = 80, pause = 2000) {
