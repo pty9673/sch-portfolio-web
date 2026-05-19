@@ -10,22 +10,22 @@ const TYPING_TEXTS = [
 ];
 
 const techStack = [
-  { name: "React", logo: "/manus-storage/6t9ERzgejwQg_6ff8b02f.png" },
-  { name: "Java", logo: "/manus-storage/NPlERtCY5afu_311f89d2.png" },
-  { name: "MySQL", logo: "/manus-storage/uu1Wqm9bbidv_02c42af6.png" },
-  { name: "JavaScript", logo: "/manus-storage/jIIsSTmoYIfN_c2cfd46a.png" },
-  { name: "CSS3", logo: "/manus-storage/oMKMvL7RbczG_626d5eb5.png" },
-  { name: "HTML5", logo: "/manus-storage/OrvdBZIop6AD_a9c52830.png" },
-  { name: "Flutter", logo: "/manus-storage/ASQPMYa173Js_432db0db.png" },
-  { name: "Git", logo: "/manus-storage/r7Ehko5k7cxL_f9fa101b.png" },
-  { name: "GitHub", logo: "/manus-storage/FXA3YbaVfrB1_cd6df63a.jpg" },
-  { name: "Spring Boot", logo: "/manus-storage/spring-boot-logo.png" },
-  { name: "Spring Framework", logo: "/manus-storage/spring-framework-logo.png" },
-  { name: "Oracle", logo: "/manus-storage/oracle-logo.png" },
-  { name: "SQLite", logo: "/manus-storage/sqlite-logo.png" },
-  { name: "MyBatis", logo: "/manus-storage/mybatis-logo.png" },
-  { name: "Gradle", logo: "/manus-storage/gradle-logo.png" },
-  { name: "Maven", logo: "/manus-storage/maven-logo.png" },
+  { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+  { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "Flutter", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" },
+  { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+  { name: "Spring Boot", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+  { name: "Spring Framework", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+  { name: "Oracle", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" },
+  { name: "SQLite", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" },
+  { name: "MyBatis", logo: "https://mybatis.org/images/mybatis-logo.png" },
+  { name: "Gradle", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg" },
+  { name: "Maven", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" },
 ];
 
 function useTypingEffect(texts: string[], speed = 80, pause = 2000) {
