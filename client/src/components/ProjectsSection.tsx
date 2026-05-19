@@ -12,7 +12,7 @@ const projects = [
     teamSize: 7,
     technologies: ["Spring Boot", "Java", "HTML5", "CSS3", "Bootstrap", "MySQL"],
     techIcons: [
-      { name: "Spring Boot", icon: "https://spring.io/images/spring-logo.png" },
+      { name: "Spring Boot", icon: "/manus-storage/spring-boot-logo.png" },
       { name: "Java", icon: "/manus-storage/NPlERtCY5afu_311f89d2.png" },
       { name: "MySQL", icon: "/manus-storage/uu1Wqm9bbidv_02c42af6.png" },
     ],
@@ -29,8 +29,8 @@ const projects = [
     technologies: ["MySQL", "Flutter", "Firebase", "Spring Boot"],
     techIcons: [
       { name: "Flutter", icon: "/manus-storage/ASQPMYa173Js_432db0db.png" },
-      { name: "Firebase", icon: "https://www.gstatic.com/devrel-devsite/prod/v2210deb7920cd4a55bd580441aa58e7853afc04b39a9d9ac4198e1cd7fbe04ef/firebase/images/favicons/favicon.ico" },
-      { name: "Spring Boot", icon: "https://spring.io/images/spring-logo.png" },
+      { name: "Firebase", icon: "/manus-storage/firebase-logo.png" },
+      { name: "Spring Boot", icon: "/manus-storage/spring-boot-logo.png" },
     ],
     repo: "https://github.com/pty9673/next502_android_team_project",
     portfolio: "https://canva.link/lkx74pi663ih2q7",
@@ -46,7 +46,7 @@ const projects = [
     techIcons: [
       { name: "React", icon: "/manus-storage/6t9ERzgejwQg_6ff8b02f.png" },
       { name: "Flutter", icon: "/manus-storage/ASQPMYa173Js_432db0db.png" },
-      { name: "Firebase", icon: "https://www.gstatic.com/devrel-devsite/prod/v2210deb7920cd4a55bd580441aa58e7853afc04b39a9d9ac4198e1cd7fbe04ef/firebase/images/favicons/favicon.ico" },
+      { name: "Firebase", icon: "/manus-storage/firebase-logo.png" },
     ],
     repo: "https://github.com/pty9673/next502_react_team_project",
     portfolio: "https://canva.link/9kk85cy75zacivl",

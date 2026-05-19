@@ -24,20 +24,30 @@ const skillCategories: SkillCategory[] = [
     name: "Backend",
     skills: [
       { name: "Java", logo: "/manus-storage/NPlERtCY5afu_311f89d2.png" },
-      { name: "Spring Boot", logo: "https://spring.io/images/spring-logo.png" },
+      { name: "Spring Boot", logo: "/manus-storage/spring-boot-logo.png" },
+      { name: "Spring Framework", logo: "/manus-storage/spring-framework-logo.png" },
+      { name: "MyBatis", logo: "/manus-storage/mybatis-logo.png" },
     ],
   },
   {
     name: "Database",
     skills: [
       { name: "MySQL", logo: "/manus-storage/uu1Wqm9bbidv_02c42af6.png" },
-      { name: "Oracle", logo: "https://www.oracle.com/favicon.ico" },
+      { name: "Oracle", logo: "/manus-storage/oracle-logo.png" },
+      { name: "SQLite", logo: "/manus-storage/sqlite-logo.png" },
     ],
   },
   {
     name: "Mobile",
     skills: [
       { name: "Flutter", logo: "/manus-storage/ASQPMYa173Js_432db0db.png" },
+    ],
+  },
+  {
+    name: "Build Tools",
+    skills: [
+      { name: "Gradle", logo: "/manus-storage/gradle-logo.png" },
+      { name: "Maven", logo: "/manus-storage/maven-logo.png" },
     ],
   },
   {
