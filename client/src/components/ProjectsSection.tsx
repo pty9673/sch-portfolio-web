@@ -55,7 +55,7 @@ const projects = [
     role: "Flutter 모바일 앱 개발 및 Firebase 실시간 채팅 구현",
     period: "2026.04.22 ~ 2026.05.13",
     teamSize: 3,
-    images: [],
+    images: ["data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23e0e0e0' width='400' height='300'/%3E%3Ctext x='50%' y='50%' font-size='24' fill='%23999' text-anchor='middle' dominant-baseline='middle'%3ECreating Mobile App%3C/text%3E%3C/svg%3E"],
     technologies: ["React", "MySQL", "Flutter", "Firebase", "Spring Boot", "Java", "HTML", "CSS", "JavaScript"],
     techIcons: [
       { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
