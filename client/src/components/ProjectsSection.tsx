@@ -13,7 +13,7 @@ const projects = [
     role: "백엔드 로직 및 회원가입/인증 시스템 구현",
     period: "2026.02.02 ~ 2026.02.13",
     teamSize: 7,
-    images: ["/manus-storage/pasted_file_4lntVG_image_2258d741.png", "/manus-storage/pasted_file_vHyt3H_image_4f7d274a.png"],
+    images: ["/manus-storage/pasted_file_3nDY40_image_71e7504e.png"],
     technologies: ["Spring Boot", "Java", "JPA", "HTML5", "CSS3", "Bootstrap", "MySQL"],
     techIcons: [
       { name: "Spring Boot", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
@@ -36,7 +36,7 @@ const projects = [
     role: "TMDB API 연동 및 리뷰 CRUD 기능 구현",
     period: "2026.03.12 ~ 2026.03.25",
     teamSize: 4,
-    images: ["/manus-storage/pasted_file_dHwwOe_image_cda71e15.png", "/manus-storage/pasted_file_cKC9aP_image_035860f6.png"],
+    images: ["/manus-storage/pasted_file_R1pVdl_image_8657f005.png"],
     technologies: ["MySQL", "Flutter", "Firebase", "Spring Boot"],
     techIcons: [
       { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
@@ -56,7 +56,7 @@ const projects = [
     role: "Flutter 모바일 앱 개발 및 Firebase 실시간 채팅 구현",
     period: "2026.04.22 ~ 2026.05.13",
     teamSize: 3,
-    images: ["data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23e0e0e0' width='400' height='300'/%3E%3Ctext x='50%' y='50%' font-size='24' fill='%23999' text-anchor='middle' dominant-baseline='middle'%3ECreating Mobile App%3C/text%3E%3C/svg%3E"],
+    images: ["/manus-storage/pasted_file_qnZ9Cg_image_615c36da.png", "/manus-storage/pasted_file_qakn5m_image_c7e7140c.png"],
     technologies: ["React", "MySQL", "Flutter", "Firebase", "Spring Boot", "Java", "HTML", "CSS", "JavaScript"],
     techIcons: [
       { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
